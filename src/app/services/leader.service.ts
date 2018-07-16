@@ -6,8 +6,8 @@ import { LEADERS } from '../shared/leaders';
   providedIn: 'root'
 })
 export class LeaderService {
-    getLeaders(): Leader[] {
-        return LEADERS;
+    getLeaders(): Promise<Leader[]> {
+        return Promise.resolve(LEADERS);
   }
   constructor() { }
 }
