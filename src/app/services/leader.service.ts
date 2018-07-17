@@ -7,7 +7,9 @@ import { LEADERS } from '../shared/leaders';
 })
 export class LeaderService {
     getLeaders(): Promise<Leader[]> {
-        return Promise.resolve(LEADERS);
-  }
+        return new Promise(resolve => {
+            setTimeout(() => resolve(LEADERS), 2000);
+        });
+    }
   constructor() { }
 }
