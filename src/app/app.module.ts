@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import 'hammerjs';
+import { MatSliderModule } from '@angular/material/slider';
 import { MenuComponent } from './menu/menu.component';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -49,6 +50,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
       MatToolbarModule,
       MatProgressSpinnerModule,
       MatListModule,
+      MatSliderModule,
       FlexLayoutModule,
       MatGridListModule,
       MatCardModule,

@@ -9,7 +9,7 @@ import { delay } from 'rxjs/operators';
 })
 export class LeaderService {
     getLeaders(): Observable<Leader[]> {
-        return of(LEADERS).pipe(delay(2000);
+        return of(LEADERS).pipe();
     }
 
   constructor() { }
